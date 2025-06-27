@@ -46,7 +46,7 @@ The script prints:
 ## 🧪 Usage
 
 ```bash
-./vault-invoices-checker.sh &lt;vote_account_address&gt; [epochs_to_check]
+./vault-invoices-checker.sh <vote_account_address>; [epochs_to_check]
 ```
 
 - `vote_account_address`: required — the validator's vote account pubkey
