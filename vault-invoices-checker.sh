@@ -164,7 +164,7 @@ for ((i = CURRENT_EPOCH - 1; i >= CURRENT_EPOCH - EPOCHS_TO_CHECK; i--)); do
     fi
 
     # Output invoice row
-    echo -e "Epoch $i:  Stake: $STAKE_SOL SOL   Invoice: $AMOUNT_FMT vSOL   Deadline: ${COLOR}epoch $DEADLINE${NC}"
+    echo -e "Epoch $i:\tStake: $STAKE_SOL SOL   \tInvoice: $AMOUNT_FMT vSOL     Deadline: ${COLOR}epoch $DEADLINE${NC}"
 
     # Add to total vSOL owed
     TOTAL_VSOL=$(awk -v t="$TOTAL_VSOL" -v a="$AMOUNT" 'BEGIN { print t + a / 1e9 }')
